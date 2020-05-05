@@ -1,0 +1,29 @@
+@import "fonts.scss";
+@import "_color-vars.scss";
+
+@mixin sctn-font-style{
+	h4{
+		font: normal 400 24px KaushanScript, sans-serif;
+		color: $prm-headings-clr;
+
+	}
+	h3{
+		font: normal 700 30px Montserrat, sans-serif;
+		color: $prm-headings-clr;
+	}
+	p{
+		font: normal 400 30px Roboto, sans-serif;
+		color: $prm-descr-clr;
+	}
+}
+
+@mixin blocks-font-style{
+	h5{
+		font: normal 400 14px Montserrat, sans-serif;
+		color: $prm-headings-clr;
+	}
+	p{
+		font: normal 400 15px Roboto, sans-serif;
+		color: $prm-descr-clr;
+	}
+}
