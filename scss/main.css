@@ -271,8 +271,7 @@ nav {
   box-sizing: border-box; }
 
 body {
-  max-width: 100%;
-  background-color: linear-gradient(-45deg, rgba(252, 127, 138, 0.9), rgba(243, 129, 129, 0.9)); }
+  max-width: 100%; }
 
 a {
   text-decoration: none;
