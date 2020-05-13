@@ -3,7 +3,7 @@
 
 @mixin sctn-font-style{
 	h4{
-		font: normal 400 24px KaushanScript, sans-serif;
+		font: normal 400 24px Kaushan Script, sans-serif;
 		color: $prm-headings-clr;
 
 	}
@@ -12,7 +12,7 @@
 		color: $prm-headings-clr;
 	}
 	p{
-		font: normal 400 30px Roboto, sans-serif;
+		font: normal 400 15px/24px Roboto, sans-serif;
 		color: $prm-descr-clr;
 	}
 }

@@ -1,5 +1,6 @@
 
 @import "_header";
+@import "_sctn_abt_us";
 
 *{
 	padding: 0;
@@ -9,7 +10,7 @@
 
 body{
 	max-width: 100%;
-	background-color: linear-gradient (-45deg, rgba(252, 127, 138, .9), rgba( 243, 129, 129, .9));
+	background-color: linear-gradient( -45deg, rgba(252, 127, 138, .9), rgba( 243, 129, 129, .9));
 }
 
 a{

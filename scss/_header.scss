@@ -9,7 +9,7 @@ header{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: linear-gradient( -45deg, rgba(252, 127, 138, .9), rgba( 243, 129, 129, .9));
+	// background: $hvr-grdnt;
 }
 
 nav{
@@ -71,7 +71,7 @@ nav{
 
 	h2 {
 	margin-bottom: 64px;
-	font: normal 400 63px KaushanScript, sans-serif;
+	font: normal 400 63px Kaushan Script, sans-serif;
 	color: $prm-white-clr;
 	}
 
@@ -118,20 +118,27 @@ nav{
 
 }
 
-.chapter-list li {
+.chptr-lst-itm {
 	display: inline-block;
 	width: 280px;
-	padding: 26px auto 26px 0;
+	padding: 26px 0;
 	font: normal 300 18px Montserrat, sans serif;
 	text-transform: uppercase;
 	color: $prm-white-clr;
+	border-top: 3px solid rgba(255, 255, 255, .5);
+	text-align: left;
+
+		span{
+			font: normal bold 18px Montserrat, sans serif;
+			text-transform: uppercase;
+			color: $prm-white-clr;
+		}
+
 }
 
-// .chpr-num{
-// 	font: normal bold 14px Montserrat, sans serif;
-// 	text-transform: uppercase;
-// 	color: $prm-white-clr;
-// }
+.chptr-lst-itm:nth-of-type(1){
+	border-top: 3px solid linear-gradient(to right, mediumorchid 50%, orchid 50%);
+}
 
 
 
