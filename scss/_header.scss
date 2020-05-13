@@ -5,11 +5,11 @@
 
 
 header{
-	background-image: url("../img/header-bg.jpg");
-	background-position: center;
+	background-image: $hvr-grdnt, url("../img/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	// background: $hvr-grdnt;
+	background-position: center;
+
 }
 
 nav{
