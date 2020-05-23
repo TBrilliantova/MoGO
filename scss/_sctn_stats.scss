@@ -1,0 +1,40 @@
+@import "_color-vars";
+@import "_ mixins";
+@import "_fonts";
+
+.sctn-stats{
+	background-color: $prm-blue-clr;
+} 
+
+.stats-indx-list{
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+	flex-direction: row;
+}
+
+
+.stats-list-itm {
+	display: inline-block;
+	width: 240px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	border-left: 1px solid rgba(255, 255, 255, .5);
+	text-align: center;
+	color: $prm-white-clr;
+
+	span{
+			font: normal 700 72px Montserrat, sans serif;
+	}
+
+	h5{
+		font: normal 300 14px Montserrat, sans serif;
+		text-transform: uppercase;
+	}
+}
+
+
+.stats-list-itm:nth-of-type(5){
+	border-right: 1px solid rgba(255, 255, 255, .5);
+}
+
