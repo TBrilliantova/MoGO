@@ -1,0 +1,101 @@
+@import "_color-vars";
+@import "_ mixins";
+@import "_fonts";
+
+.sctn-servs{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 113px;
+	padding-bottom: 118px; 
+	text-align: center;
+	@include sctn-font-style;
+
+
+	h4{
+		margin-bottom: 24px;
+	}
+	h3{
+		position: relative;
+		margin-bottom: 110px;
+	}
+}
+
+.sctn-servs h3::after{
+	content: ('');
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -42px;
+	margin: 0 auto;
+	width: 60px;
+	height: 3px;
+	background-color: $scdr-red-color;
+}
+
+.servs-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1200px;
+	margin: 0 auto;
+
+	li{
+		display: inline-block;
+		padding: 0 20px 24px 20px;
+	}
+
+}
+
+.serv-itm-cont{
+	display: inline-block;
+	@include blocks-font-style;
+	text-align: left;
+
+		h5{
+			margin-bottom: 18px;
+		}
+
+		p{
+			width: 278px;
+		}
+
+}
+
+.pht-serv-icn, .desgn-serv-icn, .creat-serv-icn, .seo-serv-icn, .dvlp-serv-icn, .dgtl-serv-icn{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 30px;
+	vertical-align: top;
+}
+
+
+.pht-serv-icn{
+	background: url("../img/pht-serv-icn.png") center/contain no-repeat;
+}
+
+.desgn-serv-icn{
+	background: url("../img/desgn-serv-icn.png") center/contain no-repeat;
+}
+
+.creat-serv-icn{
+	background: url("../img/creat-serv-icn.png") center/contain no-repeat;
+}
+
+.seo-serv-icn{
+	background: url("../img/seo-serv-icn.png") center/contain no-repeat;
+}
+.dvlp-serv-icn{
+	background: url("../img/dvlp-serv-icn.png") center/contain no-repeat;
+}
+
+.dgtl-serv-icn{
+	background: url("../img/dgtl-serv-icn.png") center/contain no-repeat;
+}
+
+
+
+
+
+
+

@@ -9,6 +9,7 @@
 	}
 	h3{
 		font: normal 700 30px Montserrat, sans-serif;
+		text-transform: uppercase;
 		color: $prm-headings-clr;
 	}
 	p{
@@ -20,6 +21,7 @@
 @mixin blocks-font-style{
 	h5{
 		font: normal 400 14px Montserrat, sans-serif;
+		text-transform: uppercase;
 		color: $prm-headings-clr;
 	}
 	p{
@@ -27,3 +29,4 @@
 		color: $prm-descr-clr;
 	}
 }
+
