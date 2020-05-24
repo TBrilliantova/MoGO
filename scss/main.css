@@ -222,7 +222,7 @@ nav {
 .sctn-abt-us {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 113px;
+  padding-top: 92px;
   text-align: center; }
   .sctn-abt-us h4 {
     font: normal 400 24px Kaushan Script, sans-serif;
@@ -239,6 +239,9 @@ nav {
   .sctn-abt-us h3 {
     position: relative;
     margin-bottom: 93px; }
+  .sctn-abt-us p {
+    width: 80%;
+    margin: 0 auto 104px auto; }
 
 .sctn-abt-us h3::after {
   content: "";
