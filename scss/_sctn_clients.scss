@@ -1,0 +1,29 @@
+@import "_color-vars";
+@import "_ mixins";
+@import "_fonts";
+
+
+
+
+.sctn-clients{
+	background-color: $scdr-grey-color;
+}
+
+.client-list{
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 72px 0;
+
+	li{
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+	border-radius: 100px;
+	background-color: $scdr-red-color;
+	}
+}
+
