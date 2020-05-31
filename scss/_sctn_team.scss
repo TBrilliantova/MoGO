@@ -1,0 +1,66 @@
+@import "_color-vars";
+@import "_ mixins";
+@import "_fonts";
+
+.sctn-team{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 92px;
+	text-align: center;
+	@include sctn-font-style;
+
+
+	h4{
+		margin-bottom: 24px;
+	}
+	h3{
+		position: relative;
+		margin-bottom: 93px;
+	}
+
+	p{
+		width: 80%;
+		margin: 0 auto 104px auto;
+		// margin-bottom: 104px;
+	}
+}
+
+.sctn-team h3::after{
+	content: ('');
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -42px;
+	margin: 0 auto;
+	width: 60px;
+	height: 3px;
+	background-color: $scdr-red-color;
+}
+
+.team-gllry{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 116px;
+}
+
+
+.team-gllry-itm{
+	@include blocks-font-style;
+	align-items: center;
+
+
+	h5{
+		margin-bottom: 15px;
+	}
+}
+
+.team-pht{
+	 	display: inline-block;
+	 	width: 380px;
+	 	height: 470px;
+	 	margin-bottom: 33px;
+	 	background-color: $scdr-red-color;
+}
+
