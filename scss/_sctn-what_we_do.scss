@@ -1,0 +1,138 @@
+@import "_color-vars";
+@import "_ mixins";
+@import "_fonts";
+
+.sctn-prjcts{
+	padding-top: 92px;
+	padding-bottom: 127px;
+	text-align: center;
+	@include sctn-font-style;
+
+
+	h4{
+		margin-bottom: 24px;
+	}
+	h3{
+		position: relative;
+		margin-bottom: 93px;
+	}
+
+	p{
+		width: 80%;
+		margin: 0 auto 104px auto;
+	}
+}
+
+.sctn-prjcts h3::after{
+	content: ('');
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -42px;
+	margin: 0 auto;
+	width: 60px;
+	height: 3px;
+	background-color: $scdr-red-color;
+}
+
+.prjcts-contnt{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1200px;
+	margin: 0 auto;
+
+
+	picture{
+		display: inline-block;
+		margin-right: 30px;
+		width: 595px;
+		height: 397px;
+	}
+}
+
+.prjcts-accrdn{
+	display: inline-block;	
+	width: 575px;
+	@include blocks-font-style;
+}
+
+
+.accrdn-tab input{
+	display: none;
+}
+
+.accrdn-tab:nth-of-type(2){
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.accrdn-tab-title{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 14px 22px 14px 19px;
+		border: 1px solid #e5e5e5;
+		text-align: left;
+		list-style: none;
+		cursor: pointer;
+
+		h5{
+			display: inline-block;
+		}
+
+		i{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 32px;
+			color: #cccccc;
+		}
+}
+
+summary::-webkit-details-marker {
+ 		display: none
+} 
+
+.dsgn-icn, .crtty-icn, .pht-icn{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+	width: 32px;
+	height: 32px;
+}
+
+.pht-icn{
+	background: url("../img/prjcts-pht-icn.png") center/ 100% no-repeat;
+}
+.crtty-icn{
+	background: url("../img/prjcts-crtty-icn.png") center/ 100% no-repeat;
+}
+
+.dsgn-icn{
+	background: url("../img/prjcts-pht-icn.png") center/ 100% no-repeat;
+}
+
+.accrdn-tab-content {
+	display: none;
+	height: 180px;
+	padding: 18px 24px 27px 18px;
+	overflow: scroll;
+	border: 1px solid #e5e5e5;
+	text-align: left;
+	font: italic 300 15px/24px Roboto, sans-serif;
+	color: $prm-descr-clr;
+}
+
+.accrdn-tab :checked {
+	
+	i{
+		transform: rotate(180deg);
+		transition: .4s ease-out;
+	}
+}
+
+.accrdn-tab :checked ~ .accrdn-tab-content {
+ 	display: block;
+}
+

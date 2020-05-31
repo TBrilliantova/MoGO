@@ -4,7 +4,7 @@
 	<title>MoGo</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet"  href="scss/main.css">
-	<link href="https://materialdesignicons.com/cdn/2.0.46/" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
 </head>
 <body>
 
@@ -29,12 +29,12 @@
 					<a class="nav-link" href="#" tabindex="6">
 						<li>Contact</li>
 					</a>
-<!-- 					<a class="icn-cart" href="#" tabindex="6">
+					<a class="icn-cart" href="#" tabindex="6">
 						<li><span class="mdi mdi-cart-outline"></span></li>
 					</a>
 					<a class="icn-search" href="#" tabindex="6">
 						<li><span class="mdi mdi-search-web"></span></li>
-					</a> -->
+					</a>
 				</ul>
 		</nav>
 
@@ -152,51 +152,112 @@
 		</picture>
 	</section>
 <!-- Section Projects -->
-	<section>
+	<section class="sctn-prjcts">
 		<h4>Service</h4>
 		<h3>what we do</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>	
 		<div class="prjcts-contnt">
 			<picture>
-				<source src="" type="">
-				<img src="">
+				<source  media="(min-width:1920px)" srcset="img/projects-img.jpg">
+				<img src="img/projects-img.jpg">
 			</picture>
-			<ul class="prjcts-accrdn">
-				<li>
-					<details>
-						<summary>
-							<img  class="pht-icn" src="">
+
+			<div class="prjcts-accrdn">
+
+				<div class="accrdn-tab">
+					<input  id ="tab-one" type="radio" name="tab-group">
+					<label for="tab-one" class="accrdn-tab-title">
+						<div>
+							<div class="pht-icn"></div>
 							<h5>Photography</h5>
-						</summary>
-						<p>
+						</div>
+						<i class="mdi mdi-chevron-down"></i>
+					</label>
+					<div class="accrdn-tab-content" >
+						<span>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>
-							<img  class="crtty-icn" src="">
+						</span>
+					</div>
+				</div>
+				<div class="accrdn-tab">
+					<input  id ="tab-two" type="radio" name="tab-group">
+					<label for="tab-two" class="accrdn-tab-title">
+						<div>
+							<div  class="crtty-icn" src=""></div>
 							<h5>Creativity</h5>
-						</summary>
-						<p>
+						</div>
+						<i class="mdi mdi-chevron-down"></i>
+					</label>
+					<div class="accrdn-tab-content" >
+						<span>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>
-							<img  class="dsgn-icn" src="">
+						</span>
+					</div>
+
+				</div>
+
+				<div class="accrdn-tab">
+					<input  id ="tab-three" type="radio" name="tab-group">
+					<label for="tab-three" class="accrdn-tab-title">
+						<div>
+							<div class="dsgn-icn" src=""></div>
 							<h5>Web Design</h5>
+						</div>
+						<i class="mdi mdi-chevron-down"></i>	
+					</label>
+					<div class="accrdn-tab-content" >
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</span>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+	<!-- 		<div class="prjcts-accrdn">
+					<details open>
+						<summary>
+							<div>
+								<div class="pht-icn"></div>
+								<h5>Photography</h5>
+							</div>
+							<i class="mdi mdi-chevron-down"></i>
 						</summary>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
+					</details> -->
+			<!-- 		<details>
+						<summary>
+							<div>
+								<div  class="crtty-icn" src=""></div>
+								<h5>Creativity</h5>
+							</div>
+							<i class="mdi mdi-chevron-down"></i>
+						</summary>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</details> -->
+	<!-- 				<details>
+						<summary>
+							<div>
+								<div class="dsgn-icn" src=""></div>
+								<h5>Web Design</h5>
+							</div>
+							<i class="mdi mdi-chevron-down"></i>
+						</summary>
+						<div class="accrdn-descr" >
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						 </p>
+						</div>
 					</details>
-				</li>
-			</ul>
-		</div>	
+				</div>
+		</div>	 -->
 	</section>
 <!-- Section Quote -->
 	<section class="sctn-quote">
