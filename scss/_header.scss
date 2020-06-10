@@ -9,59 +9,73 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-
+	
 }
 
 nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 40px 0 40px;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
 	font: normal 400 14px Montserrat, sans serif;
 }
 
 .logo{
 	display: inline-block;
-	margin-left: 360px;
 	font: normal bold 30px Montserrat, sans serif;
 	color: $prm-white-clr;
 }
 
 .main-nav{
 	display: inline-block;
-	margin-right: 360px;
 
-	li, button{
-	display: inline-block;
-}
-
-
+	li{
+		display: inline-block;
+	}
 }
 
 .nav-link {
-	padding: 0 0 12px 0;
+	padding: 0 2px 12px 2px;
 	margin-right: 58px;
 	font: normal 400 14px Montserrat, sans serif;
 	text-transform: uppercase;
 	color: $prm-white-clr;
-
 }
 
 .nav-link:nth-of-type(1){
 	margin-right: 55px;
 	border-bottom: 4px solid $hvr-clr;
 	color: $hvr-clr;
-	}
+}
 
 .nav-link:hover{
 	border-bottom: 4px solid $hvr-clr;
 	color: $hvr-clr;
 }
-// .icn-cart{
-// 	font: normal 400 14px Montserrat, sans serif;
-// 	color: $prm-white-clr;
-// }
+
+
+.mdi{
+	font: normal 400 20px Montserrat, sans serif;
+	color: $prm-white-clr;
+}
+
+.mdi:hover{
+	color:  $hvr-clr;
+}
+
+.mdi-menu{
+	display: none;
+}
+
+.mdi-close{
+	display: none;
+}
+
+.icn-cart{
+ margin-right: 40px;
+ }
 
 .header-contnt{
 	width: 1200px;
@@ -70,17 +84,17 @@ nav{
 	text-align: center;
 
 	h2 {
-	margin-bottom: 64px;
-	font: normal 400 63px Kaushan Script, sans-serif;
-	color: $prm-white-clr;
+		margin-bottom: 64px;
+		font: normal 400 63px Kaushan Script, sans-serif;
+		color: $prm-white-clr;
 	}
 
 	h1 {
-	position: relative;
-	margin-bottom: 124px;
-	font: normal bold 150px/140px Montserrat, sans serif;
-	text-transform: uppercase;
-	color: $prm-white-clr;
+		position: relative;
+		margin-bottom: 124px;
+		font: normal bold 150px/140px Montserrat, sans serif;
+		text-transform: uppercase;
+		color: $prm-white-clr;
 	}
 }
 
@@ -102,20 +116,11 @@ nav{
 	background-color: transparent;
 	border: 2px solid $prm-white-clr;
 
-			a{
-				font: normal bold 14px Montserrat, sans serif;
-				text-transform: uppercase;
-				color: $prm-white-clr;
-			}
-}
-
-.btn-learn-more:hover{
-	background-color: $prm-white-clr;
-			a{
-				color: $scdr-red-color;
-			}
-
-
+		a{
+			font: normal bold 14px Montserrat, sans serif;
+			text-transform: uppercase;
+			color: $prm-white-clr;
+		}
 }
 
 .chptr-lst-itm {
@@ -137,7 +142,132 @@ nav{
 }
 
 .chptr-lst-itm:nth-of-type(1){
-	border-top: 3px solid linear-gradient(to right, mediumorchid 50%, orchid 50%);
+	border-top-width: 3px;
+   border-top-style: solid;
+   border-top-image: red;
+}
+
+
+
+.btn-learn-more:hover{
+	background-color: $prm-white-clr;
+		a{
+			color: $scdr-red-color;
+		}
+}
+
+
+
+
+
+@media (max-width: 1280px) {
+
+	nav{
+ 		width: 920px;
+ 	}
+
+ 	.nav-link {
+		margin-right: 48px;
+
+	}
+
+	.nav-link:nth-of-type(1){
+		margin-right: 45px;
+	}
+
+	.icn-cart{
+		margin-right: 40px;
+ 	}
+
+	.header-contnt{
+		width: 100%;
+
+		h2 {
+			font: normal 400 40px Kaushan Script, sans-serif;
+		}
+
+		h1 {
+
+		font: normal bold 100px/140px Montserrat, sans serif;
+		}
+	}
+
+		.chptr-lst-itm {
+		display: inline-block;
+		width: 200px;
+	}
+}
+
+@media (max-width: 920px) {
+
+	nav{
+ 		width: 840px;
+ 		flex-wrap: wrap;
+ 	}
+
+ 	 .mdi-menu{
+		display: block;
+	}
+
+
+.main-nav{
+ 	display: block;
+ 	flex-basis: 100%;
+ 	background-color: $prm-white-clr;
+ 	border-radius: 1px;
+ 	padding-left: 24px;
+ }
+
+ .nav-link {
+	display: block;
+	margin-right: 0px;
+	padding: 24px 40px 4px 0;
+	font: normal 400 14px Montserrat, sans serif;
+	text-transform: uppercase;
+	color: $prm-headings-clr;
+	}
+
+.nav-link:nth-of-type(1){
+	margin-right: 0;
+}
+
+.nav-link:nth-of-type(5){
+		margin-bottom: 16px;
+	}
+
+.mdi{
+	display: block;
+	margin-bottom: 16px;
+	font: normal 400 20px Montserrat, sans serif;
+	color: $prm-headings-clr;
+	
+}
+
+
+}
+
+
+
+
+
+@media (max-width: 880px) {
+
+	nav{
+ 		width: 800px;
+ 	}
+
+ 	.nav-desktop{
+ 		display: none;
+ 	}
+
+	.mdi-menu{
+	display: block;
+	}
+
+	.chptr-lst{
+		display: none;
+	}
+ 	
 }
 
 
