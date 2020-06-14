@@ -8,9 +8,9 @@ header{
 	background-image: $hvr-grdnt, url("../img/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	
+	background-position: center;	
 }
+
 
 nav{
 	display: flex;
@@ -147,8 +147,7 @@ nav{
    border-top-image: red;
 }
 
-
-
+// Hovers
 .btn-learn-more:hover{
 	background-color: $prm-white-clr;
 		a{
@@ -156,11 +155,7 @@ nav{
 		}
 }
 
-
-
-
-
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
 	nav{
  		width: 920px;
@@ -198,7 +193,7 @@ nav{
 	}
 }
 
-@media (max-width: 920px) {
+@media screen and (max-width: 920px) {
 
 	nav{
  		width: 840px;
@@ -207,67 +202,46 @@ nav{
 
  	 .mdi-menu{
 		display: block;
+		font: normal 400 20px Montserrat, sans serif;
+		color: $prm-headings-clr;
 	}
 
 
-.main-nav{
- 	display: block;
- 	flex-basis: 100%;
- 	background-color: $prm-white-clr;
- 	border-radius: 1px;
- 	padding-left: 24px;
- }
+	.main-nav{
+ 		display: none;
+ 		flex-basis: 100%;
+ 		background-color: $prm-white-clr;
+ 		border-radius: 1px;
+ 		padding-left: 24px;
 
- .nav-link {
-	display: block;
-	margin-right: 0px;
-	padding: 24px 40px 4px 0;
-	font: normal 400 14px Montserrat, sans serif;
-	text-transform: uppercase;
-	color: $prm-headings-clr;
+ 				li{
+			display: block;
+		}
+ 	}
+
+	 .nav-link {
+		display: none;
+		margin-right: 0px;
+		padding: 24px 40px 4px 0;
+		font: normal 400 14px Montserrat, sans serif;
+		text-transform: uppercase;
+		color: $prm-headings-clr;
 	}
 
-.nav-link:nth-of-type(1){
-	margin-right: 0;
-}
+	.nav-link:nth-of-type(1){
+		margin-right: 0;
+	}
 
-.nav-link:nth-of-type(5){
+	.nav-link:nth-of-type(5){
 		margin-bottom: 16px;
 	}
 
-.mdi{
-	display: block;
-	margin-bottom: 16px;
-	font: normal 400 20px Montserrat, sans serif;
-	color: $prm-headings-clr;
-	
-}
-
-
-}
-
-
-
-
-
-@media (max-width: 880px) {
-
-	nav{
- 		width: 800px;
- 	}
-
- 	.nav-desktop{
- 		display: none;
- 	}
-
-	.mdi-menu{
-	display: block;
+	.mdi{
+		display: block;
+		margin-bottom: 16px;
+		font: normal 400 20px Montserrat, sans serif;
+		color: $prm-headings-clr;
 	}
-
-	.chptr-lst{
-		display: none;
-	}
- 	
 }
 
 
