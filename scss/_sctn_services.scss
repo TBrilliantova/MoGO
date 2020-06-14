@@ -3,8 +3,6 @@
 @import "_fonts";
 
 .sctn-servs{
-	width: 1200px;
-	margin: 0 auto;
 	padding-top: 113px;
 	padding-bottom: 118px; 
 	text-align: center;
@@ -42,8 +40,19 @@
 	li{
 		display: inline-block;
 		padding: 0 20px 24px 20px;
+		margin-bottom: 30px;
 	}
 
+	li:nth-of-type(1){
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	li:nth-of-type(2){
+		border-bottom: 1px solid #e5e5e5;
+	}
+	li:nth-of-type(3){
+		border-bottom: 1px solid #e5e5e5;
+	}
 }
 
 .serv-itm-cont{
@@ -58,7 +67,6 @@
 		p{
 			width: 278px;
 		}
-
 }
 
 .pht-serv-icn, .desgn-serv-icn, .creat-serv-icn, .seo-serv-icn, .dvlp-serv-icn, .dgtl-serv-icn{
@@ -68,7 +76,6 @@
 	margin-right: 30px;
 	vertical-align: top;
 }
-
 
 .pht-serv-icn{
 	background: url("../img/pht-serv-icn.png") center/contain no-repeat;
@@ -93,6 +100,58 @@
 	background: url("../img/dgtl-serv-icn.png") center/contain no-repeat;
 }
 
+@media screen and (max-width: 1280px) {
+
+	.servs-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000px;
+	margin: 0 auto;
+	justify-content: space-around;
+
+
+	li:nth-of-type(1){
+		border-bottom: none;
+	}
+
+	li:nth-of-type(2){
+		border-bottom: none;
+	}
+
+	li:nth-of-type(3){
+		border-bottom: none;
+	}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.servs-list{
+		width: 920px;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.servs-list{
+		width: 820px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.servs-list{
+		width: 780px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.servs-list{
+		width: 300px;
+
+		li{
+			margin-bottom: 20px;
+		}
+	}
+}
 
 
 
