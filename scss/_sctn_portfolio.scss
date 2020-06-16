@@ -3,8 +3,6 @@
 @import "_fonts";
 
 .sctn-prtflio{
-	width: 1200px;
-	margin: 0 auto;
 	padding-top: 92px;
 	text-align: center;
 	@include sctn-font-style;
@@ -21,7 +19,6 @@
 	p{
 		width: 80%;
 		margin: 0 auto 104px auto;
-		// margin-bottom: 104px;
 	}
 }
 
@@ -36,7 +33,473 @@
 	height: 3px;
 	background-color: $scdr-red-color;
 }
+
 .works-list{
+	width: 1920px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
+	font-size: 0px;
 }
+
+.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 480px;
+	height: 390px;
+	padding-top: 160px;
+
+	.works-list-hover{
+		display: none;
+	}
+
+}
+
+.work-five {
+	width: 480px;
+	height: 780px;
+	padding-top: 345px;
+
+	.works-list-hover{
+		display: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+}
+
+.works-hover-icn{
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	background: url("../img/works-hover-icn.png") center/ 100% no-repeat;
+}
+
+.works-hover-title{
+	font: normal 300 14px/14px Montserrat, sans serif;
+	text-transform: uppercase;
+	color: $prm-white-clr;
+	margin: 18px 0 10px 0;
+}
+
+.works-hover-descr{
+	font: italic 300 15px/15px Roboto, sans-serif;
+	color: $prm-white-clr;
+}
+
+.work-one{
+	background: url("../img/work-one.jpg") center/ 100% no-repeat;
+}
+
+.work-two{
+	background: url("../img/work-two.jpg") center/ 100% no-repeat;
+}
+
+.work-thee{
+	background: url("../img/work-thee.jpg") center/ 100% no-repeat;
+}
+
+.work-four{
+	background: url("../img/work-four.jpg") center/ 100% no-repeat;
+}
+
+.work-five{
+	background: url("../img/work-five.jpg") center/ 100% no-repeat;
+}
+
+.work-six{
+	background: url("../img/work-six.jpg") center/ 100% no-repeat;
+}
+
+.work-seven{
+	background: url("../img/work-seven.jpg") center/ 100% no-repeat;
+}
+
+.work-one:hover{
+	background-image: $hvr-grdnt, url("../img/work-one.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+.work-two:hover{
+	background-image: $hvr-grdnt, url("../img/work-two.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+.work-thee:hover{
+	background-image: $hvr-grdnt, url("../img/work-thee.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+.work-four:hover{
+	background-image: $hvr-grdnt, url("../img/work-four.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+.work-five:hover{
+	background-image: $hvr-grdnt, url("../img/work-five.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+.work-six:hover{
+	background-image: $hvr-grdnt, url("../img/work-six.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+
+.work-seven:hover{
+	background-image: $hvr-grdnt, url("../img/work-seven.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.works-list-hover{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 1920px) {
+
+	.works-list{
+	display: flex;
+	flex-wrap: wrap;
+	width: 960px;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.works-list{
+	width: 840px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 420px;
+	height: 340px;
+	padding-top: 132px;
+	}
+
+	.work-five {
+	width: 420px;
+	height: 680px;
+	padding-top: 295px;
+
+	}
+
+}
+
+@media screen and (max-width: 920px) {
+
+	.works-list{
+	width: 760px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 380px;
+	height: 308px;
+	padding-top: 120px;
+	}
+
+	.work-five {
+	width: 380px;
+	height: 616px;
+	padding-top: 263px;
+
+	}
+
+}
+
+
+@media screen and (max-width: 820px) {
+
+	.works-list{
+	width: 720px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 360px;
+	height: 292px;
+	padding-top: 100px;
+	}
+
+	.work-five {
+	width: 360px;
+	height: 584px;
+	padding-top: 247px;
+
+	}
+
+}
+
+@media screen and (max-width: 740px) {
+
+	.works-list{
+	width: 640px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 320px;
+	height: 260px;
+	padding-top: 85px;
+	}
+
+	.work-five {
+	width: 320px;
+	height: 520px;
+	padding-top: 215px;
+
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+
+	.works-list{
+	width: 580px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 290px;
+	height: 235px;
+	padding-top: 73px;
+	}
+
+	.work-five {
+	width: 290px;
+	height: 470px;
+	padding-top: 190px;
+
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.works-list{
+	width: 500px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 250px;
+	height: 203px;
+	padding-top: 57px;
+	}
+
+	.work-five {
+	width: 250px;
+	height: 406px;
+	padding-top: 158px;
+
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	.works-list{
+	width: 440px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 220px;
+	height: 178px;
+	padding-top: 47px;
+	}
+
+	.work-five {
+	width: 220px;
+	height: 356px;
+	padding-top: 146px;
+
+	}
+
+	.works-hover-icn{
+	width: 24px;
+	height: 24px;
+}
+
+.works-hover-title{
+	font: normal 300 12px/12px Montserrat, sans serif;
+	margin: 10px 0 8px 0;
+}
+
+.works-hover-descr{
+	font: italic 300 10px/10px Roboto, sans-serif;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.works-list{
+	width: 380px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 190px;
+	height: 154px;
+	padding-top: 45px;
+	}
+
+	.work-five {
+	width: 190px;
+	height: 308px;
+	padding-top: 122px;
+
+	}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+	.works-list{
+	width: 300px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 150px;
+	height: 121px;
+	padding-top: 28px;
+	}
+
+	.work-five {
+	width: 150px;
+	height: 242px;
+	padding-top: 89px;
+	}
+
+
+	.work-one:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+
+}
+
+.work-two:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+
+
+}
+
+.work-thee:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+
+
+}
+
+.work-four:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+
+}
+
+.work-five:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+}
+
+.work-six:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+}
+
+
+.work-seven:hover{
+
+	.works-list-hover{
+		display: none;
+	}
+
+
+
+}
+
+}
+
+@media screen and (max-width: 340px) {
+
+	.works-list{
+	width: 240px;
+	}
+
+	.work-one, .work-two, .work-thee, .work-four, .work-six, .work-seven {
+	width: 120px;
+	height: 97px;
+	}
+
+	.work-five {
+	width: 120px;
+	height: 197px;
+
+	}
+
+}
+
+
+
