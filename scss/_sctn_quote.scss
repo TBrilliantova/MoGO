@@ -20,7 +20,6 @@
 	padding-top: 92px;
 }
 
-
 .mdi-chevron-left, .mdi-chevron-right{
 		font-size: 32px;
 		color: #cccccc;
@@ -63,5 +62,13 @@
 	width: 60px;
 	height: 3px;
 	background-color: $scdr-red-color;
+
+}
+
+
+@media screen and (max-width: 1280px) {
+	.quote-txt {
+	width: 600px;
+}
 
 }
