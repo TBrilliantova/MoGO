@@ -2,17 +2,17 @@
 @import "_color-vars";
 
 @mixin sctn-font-style{
-	h4{
+	.sctn-subheading{
 		font: normal 400 24px Kaushan Script, sans-serif;
 		color: $prm-headings-clr;
 
 	}
-	h3{
+	.sctn-heading{
 		font: normal 700 30px Montserrat, sans-serif;
 		text-transform: uppercase;
 		color: $prm-headings-clr;
 	}
-	p{
+	.sctn-descr{
 		font: normal 400 15px/24px Roboto, sans-serif;
 		color: $prm-descr-clr;
 	}
