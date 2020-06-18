@@ -1,0 +1,40 @@
+@import "_color-vars";
+@import "_ mixins";
+@import "_fonts";
+
+.scnt-map{
+	padding-top: 57px;
+	padding-bottom: 84px; 
+	text-align: center;
+	background: url("../img/scnt-map-bg.jpg") center/cover no-repeat;
+
+
+	h3{
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 24px;
+		font: normal 700 30px Montserrat, sans-serif;
+		text-transform: uppercase;
+		color: $scdr-red-color;
+	}
+}
+
+.scnt-map h3::after{
+	content: ('');
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: -42px;
+	margin: 0 auto;
+	width: 60px;
+	height: 3px;
+	background-color: $scdr-red-color;
+}
+
+.mdi-map-marker{
+	font-size: 32px;
+	line-height: 32px;
+	color: $scdr-red-color;
+}
+
+
