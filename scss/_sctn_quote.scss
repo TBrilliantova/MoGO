@@ -6,36 +6,46 @@
 
 
 .sctn-quote{
-	background-color: $scdr-grey-color;
+	padding: 72px 26px;
+}
+.contaner{
+	padding: 0;
 }
 
-.quote-gallery{
+.carousel-inner{
 	display: flex;
 	width: 1200px;
 	margin: 0 auto;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	padding: 72px 26px;
-	padding-top: 92px;
 }
 
-.mdi-chevron-left, .mdi-chevron-right{
-		font-size: 32px;
-		color: #cccccc;
+
+.left, .right{
+	display: inline-block;
+	.mdi{
+	font-size: 32px;
+	color: #cccccc;
+
+}
+
 }
 
 
 .quote-icn {
+	display: inline-block;
+	vertical-align: top;
 	width: 150px;
 	height: 150px;
-	margin-right: 59px;
 	border: 3px solid $prm-blue-clr;
-	background: transparent url("../img/quote-icn.png") center no-repeat;
+	background: url("../img/quote-icn.png") center no-repeat;
 }
 
 .quote-cont{
-	 // margin-right: 72px;
+	display: inline-block;
+	margin-left: 59px;
+
 }
 
 .quote-txt {
@@ -66,9 +76,155 @@
 }
 
 
-@media screen and (max-width: 1280px) {
+
+@media screen and (max-width: 1200px) {
+
+	.carousel-inner{
+		width: 1000px;
+	}
+
+	.quote-icn {
+	width: 130px;
+	height: 130px;
+}
+
+.quote-cont{
+		margin-left: 30px;
+
+}
 	.quote-txt {
-	width: 600px;
+	width: 680px;
+
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.carousel-inner{
+		width: 880px;
+	}
+
+	.quote-icn {
+	width: 100px;
+	height: 100px;
+}
+	.quote-txt {
+	width: 480px;
+	}
+}
+
+
+@media screen and (max-width: 960px) {
+
+	.carousel-inner{
+		width: 760px;
+	}
+
+	.quote-icn {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+.quote-cont{
+	display: block;
+	margin-left: 0px;
+	margin-top: 30px;
+
+}
+	.quote-txt {
+	width: 480px;
+
+	}
+}
+
+@media screen and (max-width: 760px) {
+
+	.carousel-inner{
+		width: 640px;
+	}
+	.quote-txt {
+	width: 400px;
+
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.sctn-quote-two{
+	padding: 56px 16px;
+}
+	.container{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.carousel{
+		width: 100%;
+	}
+	.carousel-inner{
+		width: 100%;
+	}
+
+	.quote-avtr {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+.quote-cont{
+	display: block;
+	margin-left: 0px;
+	margin-top: 30px;
+
+}
+	.quote-txt {
+	width: 400px;
+	font: italic 300 16px/24px Roboto, sans-serif;
+
+	}
+
+	.quote-athr{
+	font: normal normal 16px Kaushan Script, sans-serif;
 }
 
 }
+
+@media screen and (max-width: 520px) {
+	.quote-txt {
+	width: 320px;
+
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.quote-txt {
+	width: 290px;
+
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.quote-icn {
+	width: 80px;
+	height: 80px;
+}
+
+	.quote-txt {
+	width: 260px;
+
+	}
+}
+
+
+@media screen and (max-width: 340px) {
+	.quote-icn {
+	width: 80px;
+	height: 80px;
+}
+
+	.quote-txt {
+	width: 200px;
+
+	}
+}
+

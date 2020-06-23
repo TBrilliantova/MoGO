@@ -5,18 +5,21 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet"  href="scss/main.css">
 	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <!-- Header -->
-<!-- 	<header> -->
+	<header>
 		<!-- Navigation -->
-<!-- 			<nav>
+			<nav>
 				<a class="logo" href="#" tabindex="1" target="_blank">MoGo</a>
 				<a href="#" tabindex="6">
-					<i class="mdi mdi-menu"></i> -->
+					<i class="mdi mdi-menu"></i>
 <!-- 					<i class="mdi mdi-close"></i> -->
-			<!-- </a>
+			</a>
 				<ul class="main-nav">
 					<a class="nav-link" href="#" tabindex="2">
 						<li>About</li>
@@ -42,10 +45,10 @@
 
 
 			</ul>
-		</nav> -->
+		</nav>
 
 		<!-- Header content -->
-<!-- 			<div class="header-contnt">
+			<div class="header-contnt">
 				<h2>Creative Template</h2>
 				<h1>Welcome to MoGo</h1>
 				<button class="btn-learn-more" tabindex="9"><a href="#" target="_blank">Learn more<a></button>
@@ -56,7 +59,7 @@
 					<li class="chptr-lst-itm"><span>04</span> contact</li>
 				</ul>
 			</div>
-	</header> -->
+	</header>
 <!-- Section about Us -->
 	<section class="sctn-abt-us">
 		<h4 class="sctn-subheading">What we do</h4>
@@ -218,18 +221,95 @@
 	</section>
 <!-- Section Quote -->
 
-	<section class="sctn-quote">
-		<div class="quote-gallery">
-		<i class="mdi mdi-chevron-left"></i>
-		<div class="quote-icn"></div>
-		<div class="quote-cont">
-			<p class="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
-			<p class="quote-athr">Jon Doe</p>
-			
+<section class="sctn-quote">
+		<div class="container">
+
+			<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+				 <!-- Wrapper for slides -->
+
+
+				<div class="carousel-inner">
+
+					<a  class="right" href="#myCarousel" data-slide="prev">
+      					<i class="mdi mdi-chevron-left" ></i>
+      		
+    			</a>
+
+				  	<div class="item active">
+				   		<div class="quote">
+							<div class="quote-icn"></div>
+							<div class="quote-cont">
+							<p class="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+							<p class="quote-athr">Joshua Earle</p>
+							</div>
+						</div>	
+					</div>
+
+					<div class="item">
+				   		<div class="quote">
+							<div class="quote-icn"></div>
+							<div class="quote-cont">
+							<p class="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+							<p class="quote-athr">Joshua Earle</p>
+						</div>
+					</div>
+				</div>	
+
+	    			<a class="left" href="#myCarousel" data-slide="next">
+    				<i class="mdi mdi-chevron-right"></i>
+   				</a>
+
+
+			</div>
+
+
 		</div>
-		<i class="mdi mdi-chevron-right"></i>
-		</div>
+		
+
 	</section>
+
+<!-- <section class="sctn-quote">
+
+	<div class="container">
+			<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+			
+				<div class="carousel-inner">
+
+					<a  class="right" href="#myCarousel" data-slide="prev">
+      					<i class="mdi mdi-chevron-left" ></i>
+      		
+    				</a>
+
+				  	<div class="item active">
+				   		<div class="quote">
+							<div class="quote-icn"></div>
+							<div class="quote-cont-one">
+							<p class="quote-txt-one">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+							<p class="quote-athr-one">Jon Doe</p>
+							</div>
+						</div>	
+					</div>
+
+					<div class="item">
+				   		<div class="quote">
+							<div class="quote-icn"></div>
+							<div class="quote-cont-one">
+							<p class="quote-txt-one">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+							<p class="quote-athr-one">Jon Doe</p>
+							</div>
+						</div>	
+					</div>
+
+				</div>	
+    			<a class="left" href="#myCarousel" data-slide="next">
+    				<i class="mdi mdi-chevron-right"></i>
+   				</a>
+			</div>
+		</div>
+</section>  -->
+
 <!-- Section Team -->
 	<section class="sctn-team">
 		<h4 class="sctn-subheading">Who we are</h4>
@@ -389,17 +469,53 @@
 		</ul>
 	</section>
 <!-- Section Quote -->
-<!-- 	<section class="sctn-quote-two">
-		<div class="quote-gallery">
-		<i class="mdi mdi-chevron-left"></i>
-		<div class="quote-avtr"></div>
-		<div class="quote-cont">
-			<p class="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
-			<p class="quote-athr">Joshua Earle</p>
+	<section class="sctn-quote-two">
+		<div class="container">
+
+			<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+				 <!-- Wrapper for slides -->
+
+
+				<div class="carousel-inner">
+
+					<a  class="right" href="#myCarousel" data-slide="prev">
+      					<i class="mdi mdi-chevron-left" ></i>
+      		
+    			</a>
+
+				  	<div class="item active">
+				   		<div class="quote">
+							<div class="quote-avtr"></div>
+							<div class="quote-cont">
+							<p class="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+							<p class="quote-athr">Joshua Earle</p>
+							</div>
+						</div>	
+					</div>
+
+					<div class="item">
+				   		<div class="quote">
+							<div class="quote-avtr"></div>
+							<div class="quote-cont">
+							<p class="quote-txt">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+							<p class="quote-athr">Joshua Earle</p>
+						</div>
+					</div>
+				</div>	
+
+	    			<a class="left" href="#myCarousel" data-slide="next">
+    				<i class="mdi mdi-chevron-right"></i>
+   				</a>
+
+
+			</div>
+
+
 		</div>
-		<i class="mdi mdi-chevron-right"></i>
-	 </div>
-	</section> -->
+		
+
+	</section>
 <!-- Section Testimonials -->
 	<section class="sctn-testmnls">
 		<h4 class="sctn-subheading">Happy Clients</h4>
