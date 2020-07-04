@@ -64,13 +64,10 @@ nav{
 	color:  $hvr-clr;
 }
 
-.mdi-menu{
-	display: none;
-}
+// .mdi-menu{
+// 	display: none;
+// }
 
-.mdi-close{
-	display: none;
-}
 
 .icn-cart{
  margin-right: 40px;
@@ -192,9 +189,9 @@ nav{
 		}
 }
 
-.mob-menu:hover + .main-nav {
-		display: block;
-}
+// .mob-menu:hover + .main-nav {
+// 		display: block;
+// }
 
 
 @media screen and (max-width: 1280px) {
@@ -242,11 +239,11 @@ nav{
  		flex-wrap: wrap;
  	}
 
- 	 .mdi-menu{
-		display: block;
-		font: normal 400 20px Montserrat, sans serif;
-		color: $prm-white-clr;
-	}
+ // 	 .mdi-menu{
+	// 	display: block;
+	// 	font: normal 400 20px Montserrat, sans serif;
+	// 	color: $prm-white-clr;
+	// }
 }
 
 
