@@ -13,13 +13,12 @@ header{
 
 
 nav{
-	display: flex;
+	display: flex !important;
 	align-items: center;
 	justify-content: space-between;
 	width: 1200px;
 	margin: 0 auto;
 	padding: 40px 0;
-	font: normal 400 14px Montserrat, sans serif;
 }
 
 .logo{
@@ -76,6 +75,44 @@ nav{
 .icn-cart{
  margin-right: 40px;
  }
+
+// Main nav mobile{
+		.main-nav{
+ 		display: none;
+ 		flex-basis: 100%;
+ 		background-color: $prm-white-clr;
+ 		border-radius: 1px;
+ 		padding-left: 24px;
+
+ 				li{
+			display: block;
+		}
+ 	}
+
+	 .nav-link {
+		display: block;
+		margin-right: 0px;
+		padding: 24px 40px 4px 0;
+		font: normal 400 14px Montserrat, sans serif;
+		text-transform: uppercase;
+		color: $prm-headings-clr;
+	}
+
+	.nav-link:nth-of-type(1){
+		margin-right: 0;
+	}
+
+	.nav-link:nth-of-type(5){
+		margin-bottom: 16px;
+	}
+
+	.mdi{
+		display: block;
+		margin-bottom: 16px;
+		font: normal 400 20px Montserrat, sans serif;
+		color: $prm-headings-clr;
+	}
+
 
 .header-contnt{
 	width: 1200px;
@@ -155,6 +192,11 @@ nav{
 		}
 }
 
+.mob-menu:hover + .main-nav {
+		display: block;
+}
+
+
 @media screen and (max-width: 1280px) {
 
 	nav{
@@ -203,44 +245,7 @@ nav{
  	 .mdi-menu{
 		display: block;
 		font: normal 400 20px Montserrat, sans serif;
-		color: $prm-headings-clr;
-	}
-
-
-	.main-nav{
- 		display: none;
- 		flex-basis: 100%;
- 		background-color: $prm-white-clr;
- 		border-radius: 1px;
- 		padding-left: 24px;
-
- 				li{
-			display: block;
-		}
- 	}
-
-	 .nav-link {
-		display: none;
-		margin-right: 0px;
-		padding: 24px 40px 4px 0;
-		font: normal 400 14px Montserrat, sans serif;
-		text-transform: uppercase;
-		color: $prm-headings-clr;
-	}
-
-	.nav-link:nth-of-type(1){
-		margin-right: 0;
-	}
-
-	.nav-link:nth-of-type(5){
-		margin-bottom: 16px;
-	}
-
-	.mdi{
-		display: block;
-		margin-bottom: 16px;
-		font: normal 400 20px Montserrat, sans serif;
-		color: $prm-headings-clr;
+		color: $prm-white-clr;
 	}
 }
 

@@ -28,21 +28,6 @@
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -80,13 +65,12 @@ header {
   background-position: center; }
 
 nav {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
-  font: normal 400 14px Montserrat, sans serif; }
+  padding: 40px 0; }
 
 .logo {
   display: inline-block;
@@ -129,6 +113,35 @@ nav {
 
 .icn-cart {
   margin-right: 40px; }
+
+.main-nav {
+  display: none;
+  flex-basis: 100%;
+  background-color: #fff;
+  border-radius: 1px;
+  padding-left: 24px; }
+  .main-nav li {
+    display: block; }
+
+.nav-link {
+  display: block;
+  margin-right: 0px;
+  padding: 24px 40px 4px 0;
+  font: normal 400 14px Montserrat, sans serif;
+  text-transform: uppercase;
+  color: #333333; }
+
+.nav-link:nth-of-type(1) {
+  margin-right: 0; }
+
+.nav-link:nth-of-type(5) {
+  margin-bottom: 16px; }
+
+.mdi {
+  display: block;
+  margin-bottom: 16px;
+  font: normal 400 20px Montserrat, sans serif;
+  color: #333333; }
 
 .header-contnt {
   width: 1200px;
@@ -191,6 +204,9 @@ nav {
   .btn-learn-more:hover a {
     color: #f38181; }
 
+.mob-menu:hover + .main-nav {
+  display: block; }
+
 @media screen and (max-width: 1280px) {
   nav {
     width: 920px; }
@@ -222,36 +238,7 @@ nav {
   .mdi-menu {
     display: block;
     font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
-  .main-nav {
-    display: none;
-    flex-basis: 100%;
-    background-color: #fff;
-    border-radius: 1px;
-    padding-left: 24px; }
-    .main-nav li {
-      display: block; }
-
-  .nav-link {
-    display: none;
-    margin-right: 0px;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-
-  .nav-link:nth-of-type(1) {
-    margin-right: 0; }
-
-  .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-
-  .mdi {
-    display: block;
-    margin-bottom: 16px;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; } }
+    color: #fff; } }
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -282,21 +269,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -334,14 +306,17 @@ nav {
   text-align: center; }
   .sctn-abt-us .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-abt-us .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-abt-us .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-abt-us h4 {
     margin-bottom: 24px; }
   .sctn-abt-us h3 {
@@ -541,21 +516,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -696,21 +656,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -747,14 +692,17 @@ nav {
   text-align: center; }
   .sctn-servs .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-servs .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-servs .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-servs h4 {
     margin-bottom: 24px; }
   .sctn-servs h3 {
@@ -795,10 +743,12 @@ nav {
   .serv-itm-cont h5 {
     font: normal 400 14px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .serv-itm-cont p {
     font: italic 300 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .serv-itm-cont h5 {
     margin-bottom: 18px; }
   .serv-itm-cont p {
@@ -887,21 +837,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -938,14 +873,17 @@ nav {
   background: url("../img/design-bg.jpg") center/cover no-repeat; }
   .sctn-dsgn .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-dsgn .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-dsgn .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-dsgn h4 {
     margin-bottom: 24px; }
   .sctn-dsgn h3 {
@@ -1079,21 +1017,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -1130,14 +1053,17 @@ nav {
   text-align: center; }
   .sctn-prjcts .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-prjcts .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-prjcts .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-prjcts h4 {
     margin-bottom: 24px; }
   .sctn-prjcts h3 {
@@ -1178,10 +1104,12 @@ nav {
   .prjcts-accrdn h5 {
     font: normal 400 14px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .prjcts-accrdn p {
     font: italic 300 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
 
 .accrdn-tab input {
   display: none; }
@@ -1383,21 +1311,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -1607,21 +1520,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -1659,14 +1557,17 @@ nav {
   text-align: center; }
   .sctn-team .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-team .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-team .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-team h4 {
     margin-bottom: 24px; }
   .sctn-team h3 {
@@ -1700,10 +1601,12 @@ nav {
   .team-gllry-itm h5 {
     font: normal 400 14px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .team-gllry-itm p {
     font: italic 300 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .team-gllry-itm h5 {
     margin-bottom: 15px; }
 
@@ -1918,21 +1821,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -2068,21 +1956,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -2118,14 +1991,17 @@ nav {
   text-align: center; }
   .sctn-prtflio .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-prtflio .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-prtflio .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-prtflio h4 {
     margin-bottom: 24px; }
   .sctn-prtflio h3 {
@@ -2457,21 +2333,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -2680,21 +2541,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -2731,14 +2577,17 @@ nav {
   text-align: center; }
   .sctn-testmnls .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-testmnls .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-testmnls .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-testmnls h4 {
     margin-bottom: 24px; }
   .sctn-testmnls h3 {
@@ -2915,21 +2764,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -2966,14 +2800,17 @@ nav {
   text-align: center; }
   .sctn-blog .sctn-subheading {
     font: normal 400 24px Kaushan Script, sans-serif;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-blog .sctn-heading {
     font: normal 700 30px Montserrat, sans-serif;
     text-transform: uppercase;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
   .sctn-blog .sctn-descr {
     font: normal 400 15px/24px Roboto, sans-serif;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   .sctn-blog .sctn-subheading {
     margin-bottom: 24px; }
   .sctn-blog .sctn-heading {
@@ -3154,21 +2991,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -3258,21 +3080,6 @@ nav {
   src: url("../../Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.woff2") format("woff2"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.nav-desktop {
-  display: none; }
-  .nav-desktop .nav-link {
-    display: block;
-    padding: 24px 40px 4px 0;
-    font: normal 400 14px Montserrat, sans serif;
-    text-transform: uppercase;
-    color: #333333; }
-  .nav-desktop .nav-link:nth-of-type(5) {
-    margin-bottom: 16px; }
-  .nav-desktop .mdi {
-    display: block;
-    font: normal 400 20px Montserrat, sans serif;
-    color: #333333; }
-
 @font-face {
   font-family: 'Kaushan Script';
   src: url("../../KaushanScript-Regular.eot");
@@ -3617,7 +3424,7 @@ body {
   max-width: 100%; }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer; }
 
 ul {
